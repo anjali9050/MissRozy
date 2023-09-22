@@ -48,7 +48,7 @@ class Config(object):
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", False))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
-	LAZY_CHANNEL = int(os.environ.get('LAZY_CHANNEL', "1001987654567"))
+	LAZY_CHANNEL = int(os.environ.get('LAZY_CHANNEL','-100'))
 	LAZY_MODE = bool(os.environ.get("LAZY_MODE", False))
 	LAZY_PIC = os.environ.get("LAZY_PIC","https://telegra.ph/file/d382d2fad1fdd2a4ccca4.png")
 	LP_BTN_MAIN_CH_USRNM = os.environ.get("LP_BTN_MAIN_CH_USRNM")
